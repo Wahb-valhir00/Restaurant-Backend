@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Find Admin</title>
+</head>
+<body>
+    <h2>Find Admin</h2>
+    <form method="get" th:action="@{/api/admin/find/{id}(id=${admin.id})}">
+        <label for="id">Admin ID:</label>
+        <input type="text" id="id" name="id" required><br>
+        <button type="submit">Find</button>
+    </form>
+    <div th:if="${admin}">
+        <p>ID: <span th:text="${admin.id}"></span></p>
+        <p>First Name: <span th:text="${admin.firstName}"></span></p>
+        <p>Last Name: <span th:text="${admin.lastName}"></span></p>
+        <p>Email: <span th:text="${admin.email}"></span></p>
+    </div>
+    <div th:if="${not admin}">
+        <p>No admin found with the provided ID.</p>
+    </div>
+</body>
+</html>
