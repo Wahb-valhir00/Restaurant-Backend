@@ -9,8 +9,8 @@ import com.elife.projet_ff.model.User;
 import com.elife.projet_ff.repository.UserRepository;
 @Service
 public class UserService {
+    @Autowired
     private final UserRepository userRepository;
-@Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }

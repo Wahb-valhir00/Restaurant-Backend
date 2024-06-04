@@ -24,8 +24,9 @@ import com.elife.projet_ff.service.MenuService;
 @RestController
 @RequestMapping("/api/menu")
 public class MenuController {
+    @Autowired
+
     private final MenuService menuService;
-@Autowired
     public MenuController(MenuService menuService) {
         this.menuService = menuService;
     }

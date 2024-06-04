@@ -21,8 +21,8 @@ import org.springframework.beans.factory.annotation.Autowired;
     @RestController
     @RequestMapping("/api/user")
     public class UserController {
+        @Autowired
         private final UserService userService;
-    @Autowired
         public UserController(UserService userService) {
             this.userService = userService;
         }

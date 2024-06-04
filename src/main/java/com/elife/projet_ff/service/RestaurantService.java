@@ -16,7 +16,6 @@ import com.elife.projet_ff.repository.RestaurantRepository;
 @Service
 public class RestaurantService {
 
-    private final MenuRepository menuRepository;
 
     private final RestaurantRepository restaurantRepository;
 

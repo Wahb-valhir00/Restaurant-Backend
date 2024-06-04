@@ -13,10 +13,10 @@ import com.elife.projet_ff.service.ReservationService;
 @RestController
 @RequestMapping("/api/reservation")
 public class ReservationController {
+    @Autowired
 
     private final ReservationService reservationService;
 
-    @Autowired
     public ReservationController(ReservationService reservationService) {
         this.reservationService = reservationService;
     }
