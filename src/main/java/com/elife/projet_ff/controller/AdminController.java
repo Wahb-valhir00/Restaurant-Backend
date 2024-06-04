@@ -23,8 +23,8 @@ import com.elife.projet_ff.service.AdminService;
 
 
 public class AdminController {
+    @Autowired
     private final AdminService adminService;
-@Autowired
     public AdminController(AdminService adminService) {
         this.adminService = adminService;
     }
