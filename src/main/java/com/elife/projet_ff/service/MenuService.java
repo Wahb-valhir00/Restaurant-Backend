@@ -13,8 +13,8 @@ import com.elife.projet_ff.repository.MenuRepository;
 @Service
 
 public class MenuService {
+    @Autowired
     private final MenuRepository menuRepository;
-@Autowired
     public MenuService(MenuRepository menuRepository) {
         this.menuRepository = menuRepository;
     }

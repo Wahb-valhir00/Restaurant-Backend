@@ -23,8 +23,8 @@ import com.elife.projet_ff.service.RestaurantService;
 @RequestMapping("/api/restaurant")
 
 public class RestaurantController {
+    @Autowired
     private final RestaurantService restaurantService;
-@Autowired
     public RestaurantController(RestaurantService restaurantService) {
         this.restaurantService = restaurantService;
     }

@@ -2,8 +2,7 @@ package com.elife.projet_ff.service;
 
 import java.util.List;
 
-
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.elife.projet_ff.model.Repas;
 import com.elife.projet_ff.model.Menu;
@@ -15,7 +14,9 @@ import com.elife.projet_ff.repository.RestaurantRepository;
 
 @Service
 public class RestaurantService {
+    @Autowired
 
+    private final MenuRepository menuRepository;
 
     private final RestaurantRepository restaurantRepository;
 
