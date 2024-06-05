@@ -23,5 +23,7 @@ public class User {
     private String email;
     @Field("Password")
     private String password;
+    @Field("Phone")
+    private String phone;
     
 }
